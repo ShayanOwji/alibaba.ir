@@ -40,7 +40,7 @@
         <div class="flex gap-2 font-bold mx-5 py-1 px-4 border border-l-slate-400 cursor-pointer">
           <span class="text-slate-500">تور</span>          
         </div>
-        <div class="flex gap-2 font-bold">
+        <div class="flex gap-2 font-bold cursor-pointer">
           <span class="text-slate-500">بیشتر</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -63,13 +63,14 @@
           </div>
         </div>
        </nav>
-      <div class="flex justify-center relative ">
-        <div class=" max-w-[1600px]">
-          <img src="./image/hero-e1fa22fb.webp" alt="main-pic">
+      <div class="flex justify-center z-10">
+        <div class=" max-w-[1600px] ">
+          <img class="" src="./image/hero-e1fa22fb.webp" alt="main-pic">
         </div>
-
-        <div class=" -mt-10  mx-auto w-[1300px] h-[300px] border bg-white  absolute -bottom-[200px] rounded-lg">
-          <div class="flex justify-around items-center font-bold text-center text-slate-500 w-full h-28 border border-b-slate-300 ">
+      </div>
+      <div class="flex -mt-[100px] z-30">
+        <div class="mx-auto w-[1300px] h-[300px] border  bg-white bottom-[200px] rounded-lg">
+          <div class="flex justify-around items-center font-bold text-center text-slate-500 w-full h-28 border border-b-slate-300">
             <div class="cursor-pointer">
               <img class="w-9 h-9" src="./image/icons/airplane.png" alt="plain-icon">
               <span>پرواز داخلی</span>
@@ -99,11 +100,94 @@
               <span>ویلا و اقامتگاه</span>
             </div>
           </div>
-          <div></div>
-          <div></div>
+          <div class="inline-flex gap-2 py-1 px-2 rounded-2xl mx-8 mt-7 border font-bold">
+            <span>یک طرفه</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            
+          </div>
+          <div class="flex w-full mx-8 mt-8 relative">
+            <div class="flex gap-1">
+              <input class="border border-slate-400 rounded-r-lg px-5 py-3" type="text" placeholder="مبدا ">
+            </div>
+            <div class="flex">
+              <input class="border border-slate-400 rounded-l-lg px-5 py-3" type="text" placeholder="مقصد ">
+            </div>
+            <div class="flex items-center justify-center cursor-pointer bg-white border border-slate-400 w-9 h-9 rounded-[50%] absolute right-[214px] top-2">
+              <svg viewBox="0 0 24 24" width="1.5em" fill="currentColor"><path d="m16.96 12.157.07.063 3.75 3.75a.757.757 0 0 1 .06.067l-.06-.067a.748.748 0 0 1 .22.53v.025a.728.728 0 0 1-.003.039L21 16.5a.747.747 0 0 1-.147.446l-.01.014-.008.01-.055.06-3.75 3.75a.75.75 0 0 1-1.123-.99l.063-.07 2.469-2.47H8.25a.75.75 0 0 1-.087-1.495l.087-.005h10.189l-2.47-2.47a.75.75 0 0 1-.062-.99l.063-.07a.75.75 0 0 1 .99-.063ZM8.03 3.22a.75.75 0 0 1 .063.99l-.063.07-2.47 2.47h10.19a.75.75 0 0 1 .088 1.495l-.088.005H5.56l2.47 2.47a.75.75 0 0 1 .063.99l-.063.07a.75.75 0 0 1-.99.063l-.07-.063-3.75-3.75-.055-.06a.644.644 0 0 1-.005-.007l.06.067A.756.756 0 0 1 3 7.5v-.014a.47.47 0 0 1 .003-.053L3 7.5a.756.756 0 0 1 .22-.53l3.75-3.75a.75.75 0 0 1 1.06 0Z"></path></svg>
+            </div>
+            <div class="flex mx-4">
+              <div class="flex gap-1 ">
+                <input class="w-[150px] py-3 px-2 border border-slate-400 rounded-r-lg" type="text" placeholder="تاریخ رفت">
+              </div>
+              <div class="return-date flex items-center">
+                <input class="border border-slate-400 w-[150px] rounded-l-lg py-3 px-2" type="text" placeholder="تاریخ برگشت +">
+              </div>
+            </div>
+            <div class="passenger flex items-center border rounded-lg">
+              <input class="border border-slate-400 rounded-lg py-3 px-1" type="text" placeholder="مسافران">
+            </div>
+            <div class="search-btn flex items-center px-">
+              <button class="w-[200px] mx-4 px-4 py-3 border border-slate-400 rounded-lg bg-amber-500 hover:bg-amber-600 font-bold" type="button">جست و جو</button>
+            </div>
+          </div>
         </div>
       </div>
-       
+      <div class="flex mx-[420px] mt-12 font-bold text-xl">
+        <p>سایر خدمات علی بابا</p>
+      </div>
+      <div class="flex">
+        <div class="flex items-center border mr-[410px] mt-12 gap-3 w-[410px] h-[90px] rounded-lg font-bold cursor-pointer">
+          <img src="./image/icons/insurance-icon-bb51c425.svg" alt="insurance-icon">
+          <span>بیمه مسافرتی</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </div>
+        <div class="flex items-center border mr-8 mt-12  gap-3 w-[410px] h-[90px] rounded-lg font-bold cursor-pointer">
+          <img src="./image/icons/visa-icon-d8507c8e.svg" alt="travel-visa-icon">
+          <span>ویزای سفر</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>          
+        </div>
+        <div class="flex items-center border mr-9 mt-12  gap-3 w-[410px] h-[90px] rounded-lg font-bold cursor-pointer">
+          <img src="./image/icons/gtour-icon-5e641f1b.svg" alt="tour-icon">
+          <span>تور گروهی</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>          
+        </div>
+      </div>
+                      <!-- slide show section  -->
+      <div class="flex justify-center mt-8">
+        <div class="flex justify-center ">
+          <a class="w-[650px]" href="#"><img src="./image/Atlantis_Hotel_Cardview_Banner_Desktop_6794a05ada.png" alt="atlantis"></a>
+          <a class="w-[650px]" href="#"><img src="./image/B2_B_Campaign_Cardview_Desktop_775cac10f2.png" alt="travel-card"></a>
+        </div>
+      </div>
+
+      <!-- slide show section end  -->
+      <div class="flex justify-center mt-11">
+        <div class="flex items-center w-[1300px] h-[300px] border rounded-lg">
+          <div class="mr-[120px]">
+            <img src="./image/qrcode-97ae53b8.jpg" alt="qr-code">
+          </div>
+          <div>
+            <p class="mx-11 -mt- text-2xl font-extrabold">اپلیکیشن علی‌بابا</p>
+            <p class="mx-11 mt-5 mb-10 text-xl font-bold">سریع‌تر و مطمئن‌تر به سفر بروید</p>
+           <div class="flex">
+            <a class="text-xl text-blue-600 mx-11  " href="https://www.alibaba.ir/app">مشاهده لینک های دانلود ></a>           
+           </div>
+            <div class="flex items-center mt-9 mx-11">
+              <img class="w-7 h-7" src="./image/icons/apple.png" alt="apple-icon">
+              <img class="w-7 h-7 mr-4" src="./image/icons/androide.png" alt="android-icon">
+              <p class="">قابلیت نصب روی Android و iOS</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <script src="./script.js"></script>
